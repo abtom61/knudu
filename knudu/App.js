@@ -21,7 +21,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Remote 6 einchecken</Text>
+        <Text style={styles.welcome}>test</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
     );
