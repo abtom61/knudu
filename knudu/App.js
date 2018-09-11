@@ -42,12 +42,20 @@ export default class App extends Component{
           secureTextEntry={true}
           style={styles.input}
         />
-        
-        <Button
-          title={'Login'}
-          style={styles.input}
-          onPress={this.onLogin.bind(this)}
-        />
+        <View  style={styles.buttonContainer}>
+          <Button
+            title={'Login'}
+            style={styles.button}
+            onPress={this.onLogin.bind(this)}
+          />
+
+          <Button
+            title={'Registrieren'}
+            titleStyle={styles.buttonTitle}
+            style={styles.button}
+            onPress={this.onLogin.bind(this)}
+          />
+        </View>
       </View>
     );
   }
@@ -65,11 +73,6 @@ const styles = StyleSheet.create({
     fontSize: 30,
     marginBottom: 40,
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
   instructions: {
     textAlign: 'center',
     color: '#333333',
@@ -83,5 +86,14 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     marginBottom: 10,
   },
- 
+  buttonContainer:{
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  button: {
+    padding: 10,
+    borderWidth: 2,
+    margin: 20,
+  },
 });
