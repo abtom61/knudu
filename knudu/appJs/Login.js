@@ -27,7 +27,7 @@ export default class Login extends Component{
     return (
       <View style={styles.container}>
         <Text style={styles.ueberschrift}>
-          Login
+          Login Niko
         </Text>
         <TextInput
           value={this.state.username}
